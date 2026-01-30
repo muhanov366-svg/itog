@@ -3,95 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме</title>
+    <title>Резюме - Муханов Александр</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="site-title">Мое резюме</h1>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Главная</a>
+        <a href="https://s-59-sauna.github.io/best/" class="nav-link"><i class="fas fa-hot-tub"></i> Проект сауны</a>
+        <a href="educationProjects.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Учебные проекты</a>
+        <a href="why.html" class="nav-link"><i class="fas fa-user"></i> Обо мне</a>
+    </nav>
     
-    <main class="Resume">
-        <h1>мое резюме</h1>
-        <h2>МУХАНОВ АЛЕКСАНДР [1988гр]</h2>
-        <div class="contakts dop_info">
-            <h3>КОНТАКТЫ</h3>
-            <p>Телефон: +7 (982) 438-58-69</p>
-            <p>Email: m206rv159@yandex.ru</p>
-            <p>Местоположение: Пермь</p> 
+    <main class="Resume" id="home">
+        <section class="hero-section">
+            <h2 class="hero-name">МУХАНОВ АЛЕКСАНДР</h2>
+            <div class="hero-info">
+                <span class="year-badge">1988 г.р.</span>
+                <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Пермь</span>
+            </div>
+        </section>
+
+        <div class="contact-section">
+            <h3><i class="fas fa-address-card"></i> КОНТАКТЫ</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (982) 438-58-69</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>m206rv159@yandex.ru</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Пермь, Россия</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/s-59-sauna">GitHub</a>
+                </div>
+            </div>
         </div>
-        <div class="about_me">
-            <h3>О СЕБЕ </h3><br>
-            <p>Начинающий разработчик (Python), совершающий карьерный переход после 10+ лет в управлении автотранспортом. Мой прошлый опыт научил меня видеть систему целиком, оптимизировать сложные логистические процессы и работать в режиме высокой ответственности. Сейчас применяю этот подход для создания надежного и эффективного кода. За месяц интенсива «Web-программист: с нуля до первых проектов» я разработал с нуля сайт для действующего бизнеса друга. поэтому вместо коммерческого опыта предлагаю  целеустремленное обучение и 6+ месяцев интенсивной практики. Ищу команду, где смогу применять свои навыки на реальных задачах и расти под руководством опытных коллег.</p>
-        </div>
-        <div class="experience">
-            <h3>ОПЫТ РАБОТЫ</h3><br>
-            <h4>АО ОДК-СТАР</h4>
-            <h5>Начальник участка | 09.2021-09.2025</h5>
-            <h4>Достижения и обязанности:</h4>
-            <p>на производстве был пройден путь от мастера до начальника участка за период работы специализируясь на оптимизации процессов и эффективном управлении ресурсами внедрил систему учета, позволившую вовлечь в производство более 4 тонн неликвидного сырья(металла) без потерь в качестве и сократить время ремонта измерительного оборудования. Обладаю сильными коммуникативными навыками, подтвержденными доверием коллектива (избран председателем профсоюзного комитета).</p>
-            <br><h4>ФКУ БМТиВС ГУФСИН России по Пермскому краю</h4>
-            <h5>Начальник автомобильного отдела | 10.2011-08.2021</h5>
-            <h4>Достижения и обязанности:</h4>
-            <p>был пройден путь от инженера отделения транспорта, до начальника автомобильного отдела в этот период выполнил много мероприятий по поддержанию и росту коэффициента технической готовности автомобильного парка с 0,75 до 0,83  (>1100 единиц техники), проводил мероприятия по эксплуатции зданий что привело к сносу и снятию с учета 2х аварийных зданий, строительству и постановке на учет нового здания</p>
-        </div>
-        <div class="skills">
-            <table>
-                <caption><h3>НАВЫКИ</h3></caption>
-                <thead>
-                    <tr>
-                        <th>Frontend Core & Frameworks</th>
-                        <th>State Management & Tools</th>
-                        <th>Testing & Build Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML5<br> Semantic HTML<br>CSS3, CSS<br>Bootstrap<br>JavaScript<br>PYTHON</td>
-                        <td>Github<br>Figma (авто-макет, компоненты)</td>
-                        <td>Cross-browser Development<br>Mobile-First<br>Web </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-       <div class="experience">
-            <h3>ОБРАЗОВАНИЕ</h3>
-            <br><h4>ПВИ ВВ МВД России| 2010</h4>
-            <h4>Факультет технического обеспечения</h4>
-            <h4>инженер по эксплуатации многоцелевых гусеничных и колесных машин</h4>
-            <br><h4>АНО ВО «Московский университет «Синергия»| 2024-2028</h4>
-            <h4>Факультет: Информационные системы и технологииб.</h4>
-            <h4>web-разработка</h4>
-            <h4>3/7 семестр</h4><br>
-            <h3>СЕРТИФИКАЦИИ</h3>
-                <ul>
-                    <li><h4>АНО ДПО «ЦМИ» [2025]</h4><h5>Web-программист: с нуля до первых проектов</h5></li>
-                    <li><h4>нетология [2025]</h4><h5>«Основы Python: создаём телеграм-бота»</h5></li>
-                    <li><h4>нетология [2025]</h4><h5>«Введение в SQL и работу с базой данных»</h5></li>
-                    <li><h4>нетология [2025]</h4><h5>«Frontend-разработка: основы HTML, CSS и Javascript»</h5></li>
-                    <li><h4>Ространснадзор [2021]</h4><h5>Специалист ответственный за безопасность дорожного движения</h5></li>
-                    <li><h4>АНО ДПО УЦ «Профессионал» [2020]</h4><h5>Профессиональная переподготовка</h5><h5>Техносферная безопасность, 256ч.Специалист по охране труда</h5></li>
-                    <li><h4>Кировский филиал Академии ФСИН России [2019]</h4><h5>Охрана труда для руководителей и специалистов</h5></li>
-                    <li><h4>Национальный исследовательский университет «Высшая школа экономики»[2012]</h4><h5>Управление государственными и муниципальными закупками</h5></li>
-                    <li><h4>Кировский филиал Академии ФСИН России [2011]</h4><h5>Главные энергетики и инженеры ЭМО ИК, ВК, СИЗО</h5></li>
-                </ul>
-       </div>
-       <div class="dop_info">
-            <h3>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h3><br>
-            <h4>Языки:</h4>
-            <a>Английский — A1 (Beginner)</a>
-            <a>Французский - A1 (Débutant)</a>
-        </div>
+
+        <section class="about-section">
+            <h3><i class="fas fa-user"></i> О СЕБЕ</h3>
+            <div class="about-content">
+                <p>Начинающий разработчик (Python), совершающий карьерный переход после 10+ лет в управлении автотранспортом. Мой прошлый опыт научил меня видеть систему целиком, оптимизировать сложные логистические процессы и работать в режиме высокой ответственности.</p>
+                <p>Сейчас применяю этот подход для создания надежного и эффективного кода. За месяц интенсива «Web-программист: с нуля до первых проектов» я разработал с нуля сайт для действующего бизнеса друга.</p>
+                <p class="highlight">Вместо коммерческого опыта предлагаю целеустремленное обучение и 6+ месяцев интенсивной практики. Ищу команду, где смогу применять свои навыки на реальных задачах и расти под руководством опытных коллег.</p>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h3><i class="fas fa-briefcase"></i> ОПЫТ РАБОТЫ</h3>
+            
+            <div class="job-card">
+                <div class="job-header">
+                    <h4>АО ОДК-СТАР</h4>
+                    <span class="job-period">09.2021 - 09.2025</span>
+                </div>
+                <h5 class="job-title">Начальник участка</h5>
+                <div class="job-achievements">
+                    <h6>Достижения и обязанности:</h6>
+                    <ul>
+                        <li>Пройден путь от мастера до начальника участка</li>
+                        <li>Внедрил систему учета, позволившую вовлечь в производство более 4 тонн неликвидного сырья</li>
+                        <li>Сократил время ремонта измерительного оборудования</li>
+                        <li>Избран председателем профсоюзного комитета</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <h4>ФКУ БМТиВС ГУФСИН России по Пермскому краю</h4>
+                    <span class="job-period">10.2011 - 08.2021</span>
+                </div>
+                <h5 class="job-title">Начальник автомобильного отдела</h5>
+                <div class="job-achievements">
+                    <h6>Достижения и обязанности:</h6>
+                    <ul>
+                        <li>Пройден путь от инженера до начальника отдела</li>
+                        <li>Повысил коэффициент технической готовности автопарка с 0,75 до 0,83 (>1100 единиц техники)</li>
+                        <li>Провел работы по сносу аварийных зданий и строительству новых</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h3><i class="fas fa-code"></i> НАВЫКИ</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-paint-brush"></i> Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> Инструменты</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h3><i class="fas fa-graduation-cap"></i> ОБРАЗОВАНИЕ</h3>
+            
+            <div class="education-card">
+                <div class="edu-header">
+                    <h4>АНО ВО «Московский университет «Синергия»</h4>
+                    <span class="edu-year">2024-2028</span>
+                </div>
+                <p class="edu-details">Факультет: Информационные системы и технологии</p>
+                <p class="edu-details">Специальность: Web-разработка</p>
+                <div class="progress-container">
+                    <div class="progress-label">Прогресс обучения</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 43%">3/7 семестр</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="edu-header">
+                    <h4>ПВИ ВВ МВД России</h4>
+                    <span class="edu-year">2010</span>
+                </div>
+                <p class="edu-details">Факультет технического обеспечения</p>
+                <p class="edu-details">Инженер по эксплуатации многоцелевых гусеничных и колесных машин</p>
+            </div>
+        </section>
+
+        <section class="certificates-section">
+            <h3><i class="fas fa-certificate"></i> СЕРТИФИКАЦИИ</h3>
+            <div class="certificates-grid">
+                <div class="cert-card">
+                    <h5>АНО ДПО «ЦМИ» [2025]</h5>
+                    <p>Web-программист: с нуля до первых проектов</p>
+                </div>
+                <div class="cert-card">
+                    <h5>Нетология [2025]</h5>
+                    <p>Основы Python: создаём телеграм-бота</p>
+                </div>
+                <div class="cert-card">
+                    <h5>Нетология [2025]</h5>
+                    <p>Введение в SQL и работу с базой данных</p>
+                </div>
+                <div class="cert-card">
+                    <h5>Нетология [2025]</h5>
+                    <p>Frontend-разработка: основы HTML, CSS и Javascript</p>
+                </div>
+            </div>
+            <button class="show-more" id="showMoreCerts">Показать все сертификаты</button>
+            <div class="more-certs" id="moreCerts">
+                <div class="cert-card">
+                    <h5>Ространснадзор [2021]</h5>
+                    <p>Специалист ответственный за безопасность дорожного движения</p>
+                </div>
+                <div class="cert-card">
+                    <h5>АНО ДПО УЦ «Профессионал» [2020]</h5>
+                    <p>Техносферная безопасность, 256ч. Специалист по охране труда</p>
+                </div>
+                <div class="cert-card">
+                    <h5>Кировский филиал Академии ФСИН России [2019]</h5>
+                    <p>Охрана труда для руководителей и специалистов</p>
+                </div>
+                <div class="cert-card">
+                    <h5>НИУ ВШЭ [2012]</h5>
+                    <p>Управление государственными и муниципальными закупками</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="languages-section">
+            <h3><i class="fas fa-language"></i> ЯЗЫКИ</h3>
+            <div class="language-levels">
+                <div class="language-item">
+                    <span class="lang-name">Английский</span>
+                    <div class="lang-level">
+                        <div class="level-dot active"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <span class="level-text">A1 (Beginner)</span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">Французский</span>
+                    <div class="lang-level">
+                        <div class="level-dot active"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <div class="level-dot"></div>
+                        <span class="level-text">A1 (Débutant)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-        <footer class="navi">
-        <a href="https://s-59-sauna.github.io/best/">мой проект сауны</a>
-        <a href="educationProjects.html">мои учебные проекты</a>
-        <a href="why.html">что со мной</a>
-        <a href="https://cloud.mail.ru/public/RbuW/juJ6kV2ML" target="_blank" rel="noopener noreferrer">справка МСЭ</a>
-        <a href="https://cloud.mail.ru/public/v981/SAZQM7V1s" target="_blank" rel="noopener noreferrer">ИПРА</a>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://s-59-sauna.github.io/best/" class="footer-link">
+                <i class="fas fa-hot-tub"></i>
+                <span>Проект сауны</span>
+            </a>
+            <a href="educationProjects.html" class="footer-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Учебные проекты</span>
+            </a>
+            <a href="why.html" class="footer-link">
+                <i class="fas fa-user"></i>
+                <span>Обо мне</span>
+            </a>
+            <a href="mailto:m206rv159@yandex.ru" class="footer-link contact-btn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Связаться</span>
+            </a>
+        </div>
     </footer>
+
+    <script>
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Переключение темы
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = themeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+            
+            // Сохраняем тему в localStorage
+            const isDark = document.body.classList.contains('dark-theme');
+            localStorage.setItem('darkTheme', isDark);
+        });
+
+        // Проверяем сохраненную тему
+        if (localStorage.getItem('darkTheme') === 'true') {
+            document.body.classList.add('dark-theme');
+            themeToggle.querySelector('i').classList.remove('fa-moon');
+            themeToggle.querySelector('i').classList.add('fa-sun');
+        }
+
+        // Показать больше сертификатов
+        const showMoreBtn = document.getElementById('showMoreCerts');
+        const moreCerts = document.getElementById('moreCerts');
+        
+        showMoreBtn.addEventListener('click', () => {
+            moreCerts.classList.toggle('show');
+            showMoreBtn.textContent = moreCerts.classList.contains('show') 
+                ? 'Скрыть сертификаты' 
+                : 'Показать все сертификаты';
+        });
+
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Закрываем мобильное меню после клика
+                    mobileNav.classList.remove('active');
+                    menuToggle.querySelector('i').classList.add('fa-bars');
+                    menuToggle.querySelector('i').classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Анимация при прокрутке
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Наблюдаем за секциями
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-
-
